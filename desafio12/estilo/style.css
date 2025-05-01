@@ -1,9 +1,11 @@
 @charset "UTF-8";
-body{
+body,html{
 margin: 0px;
+padding: 0px;
 font-family: var(--fonte-remaster);
 font-weight: var(--font-peso);
 background-image: url('imagens/background001.jpg');
+
 
 }
 
@@ -39,9 +41,59 @@ P{
   line-height: 2.3em;
   font-size: var(--letra-grande);
 } 
+
 span{
  font-weight: lighter;
 }
-div#conteiner{
-  background-image: url('De
+.wrapper{
+  height: 100vh;
+  overflow-x: hidden;
+  perspective: 2px;
+  transform-style: preserve-3d;
 }
+.conteiner{
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  transform-style: inherit;
+
+}
+.conteiner::before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: translateZ(-1px) scale(1.5);
+
+}
+.txt{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.529);
+  text-shadow: 0px 0px 5px #000;
+  text-align: left;
+  font-size: 1.3em;
+  text-align: center;
+}
+.bg1::before{
+  background-image: url('/desafio12/imagens/background001.jpg');
+  background: ;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
