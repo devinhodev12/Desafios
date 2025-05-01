@@ -1,0 +1,45 @@
+@charset "UTF-8";
+body{
+margin: 0px;
+font-family: var(--fonte-remaster);
+font-weight: var(--font-peso);
+background-image: url('imagens/background001.jpg');
+
+}
+
+header{
+    background-color: black;
+    padding: 30px;
+
+
+}
+header>h1{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    
+}
+header>nav{
+    text-align: center;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+:root{
+    --fonte-remaster:Arial,Verdana,sans-serif;
+    --font-peso:bold;
+    --letra-grande:1.2em;
+}
+P{
+  display: block;  
+  white-space: pre;
+  line-height: 2.3em;
+  font-size: var(--letra-grande);
+} 
+span{
+ font-weight: lighter;
+}
+
