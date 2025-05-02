@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body,html,main{
+body{
 margin: 0px;
 padding: 0px;
 font-family: var(--fonte-remaster);
@@ -12,6 +12,7 @@ background-image: url('imagens/background001.jpg');
 header{
     background-color: black;
     padding: 30px;
+    pa
 
 
 }
