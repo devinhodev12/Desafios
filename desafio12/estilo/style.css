@@ -1,63 +1,78 @@
 @charset "UTF-8";
-body{
-margin: 0px;
-padding: 0px;
-font-family: var(--fonte-remaster);
-font-weight: var(--font-peso);
-background-image: url('imagens/background001.jpg');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-
-}
-
-header{
-    background-color: black;
-    padding: 30px;
-    pa
-
-
-}
-header>h1{
-    color: white;
-    text-align: center;
-    font-size: 3em;
-    
-}
-header>nav{
-    text-align: center;
-}
-
-a{
-text-decoration: none;
-color: white;
-}
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 :root{
-    --fonte-remaster:Arial,Verdana,sans-serif;
-    --font-peso:bold;
-    --letra-grande:1.2em;
+  --font1:Arial, Helvetica, sans-serif;
+  --font2:'Passion one', cursive;
+  --font3:'Sriracha';
 }
-P{
-  display: block;  
-  white-space: pre;
-  line-height: 2.3em;
-  font-size: var(--letra-grande);
-} 
 
-span{
- font-weight: lighter;
-}
-footer{
-  background-color: black;
-  padding: 5px;
-}
-footer>p{
-  color: white;
+*{
+  margin: 0px;
+  padding: 0px;
   font-size: 1em;
-  font-weight: normal;
+}
+html,body{
+  min-height: 100vh;
+  background-color: darkgrey;
+  font-family: var(--font1);
+}
+header{
+  background-color: black;
+  color: white;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header > h1 {
+   padding-top: 50px;
+   font-variant: small-caps;
+   font-family: var(--font2);
+   font-size: 10vw;
+}
+header > p {
+  padding-bottom: 50px;
+}  
+header a , footer a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header a:hover , footer a:hover{
+   text-decoration: underline;
+}
+section{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 26px;
+  font-family: var(--font3);
+  font-size: 4vw;
+}
+section > p{
+  padding-bottom: 1.3em;
+}
+.imagem > p {
+  display: inline-block;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.279);
   
 }
-
+.normal{
+  background-color: white;
+}
+.imagem{
+  background-color: rgba(0, 0, 0, 0.712);
+  color: white;
+}
+section
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
 
 
 
