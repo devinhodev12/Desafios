@@ -10,7 +10,8 @@
       }
      table{
        border-collapse: collapse;
-       width: px;
+      
+       
      }
      th{
         border:1px solid black;
@@ -21,19 +22,34 @@
         td{
         border: 1px solid gray;
         padding: 10px;
+        text-align: center;
 
      }
     
     
-     .brack{
-        display: inline-block;
-        width: 100px;
+     #brack{
+         
+ 
+       right: -52px;
+       top: 47px;
+        
       
    
      }
      #up{
        display: block;
+       width:100px ;
+       
      }
+     #block{
+        display:block;
+        width: 100px;
+        
+        
+
+     }
+
+     
      .white{
         background-color: white;
         color: black;
@@ -52,23 +68,34 @@
          <tr>
              <th>Área</th>
              <th> Disciplinas</th>
-             <th id="up" scope="colgroup">Notas</th>
-             <th class="brack" scope="col">Nota 1</th>
-             <th class="brack" scope="col">Nota 2</th>
-             
+             <th id="up" scope="colgroup" colspan="2">Notas</th>
+           
+            <th id="block">Nota 2</th>
+            <th id="brack" scope="col" >Nota 1</th>
+           
          </tr>
          
        </thead>
        <tbody >
         <tr>
-            <th class="white">Exatas</th>
+            <th class="white" rowspan="4">Exatas</th>
             <td>Matemática</td>
             <td>0.0</td>
             <td>0.0</td>
             
         </tr>
-         
-      
+         <tr>
+            <td>Física</td>
+            <td>0.0</td>
+         </tr>
+         <tr>
+            <td>Química</td>
+            <td> 0.0</td>
+         </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+        </tr>
 
        </tbody>
 
