@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+   <style>
+      body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+     table{
+       border-collapse: collapse;
+       width: px;
+     }
+     th{
+        border:1px solid black;
+        padding: 10px;
+        background-color: grey;
+        color: white;
+     }
+        td{
+        border: 1px solid gray;
+        padding: 10px;
+
+     }
+    
+    
+     .brack{
+        display: inline-block;
+        width: 100px;
+      
+   
+     }
+     #up{
+       display: block;
+     }
+     .white{
+        background-color: white;
+        color: black;
+     }
+   </style>
+
+
+
+
+
+
+</head>
+<body>
+    <table>
+       <thead>
+         <tr>
+             <th>Área</th>
+             <th> Disciplinas</th>
+             <th id="up" scope="colgroup">Notas</th>
+             <th class="brack" scope="col">Nota 1</th>
+             <th class="brack" scope="col">Nota 2</th>
+             
+         </tr>
+         
+       </thead>
+       <tbody >
+        <tr>
+            <th class="white">Exatas</th>
+            <td>Matemática</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            
+        </tr>
+         
+      
+
+       </tbody>
+
+    </table>
+</body>
+</html>
